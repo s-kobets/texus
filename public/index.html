@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <!--link(rel='stylesheet' href='../assets/css/bootstrap.css')  -->
+    <!--link(rel='stylesheet' href='../assets/css/common.css') -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--navbar-->
+      <nav role="navigation" class="navbar menu__top">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Доставка и самовывоз </a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Оплата<b class="caret glyphicon glyphicon-chevron-down"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Оплата заказа</a></li>
+                <li><a href="#">Рассрочка 0% переплата</a></li>
+                <li><a href="#">Кредит</a></li>
+                <li><a href="#">Для юридических лиц</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Гарантия и сервис</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">О компании<b class="caret glyphicon glyphicon-chevron-down"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--exit navbar-->
+      <!--.menu-search				-->
+      <div class="row menu__search">
+        <div class="col-md-3 col-sm-3 col-xs-3"> <a href="#" class="logo">
+            <h2>Техника<br>Успеха</h2>
+            <div class="logo__hover">
+              <h6>На главную</h6>
+            </div>
+            <p class="logo__texus"></p></a></div>
+        <div class="col-md-9 col-sm-9 col-xs-9">
+          <ul class="menu__phone list-inline">
+            <li>
+              <p><span class="glyphicon glyphicon-earphone"></span>+375 17 <strong>289-50-50</strong></p>
+            </li>
+            <li>
+              <p class="icon-velcome">+375 29 <strong>389-50-50 </strong></p>
+            </li>
+            <li>
+              <p class="icon-mts">+375 33 <strong>389-50-50</strong></p>
+            </li>
+            <li> 
+              <p class="p_smal">9:00 – 21:00</p>
+            </li>
+          </ul>
+          <form role="search" class="navbar-form click">
+            <div class="form-group">
+              <input id="search" type="text" placeholder="Что ищите?" class="form-control"><span id="submit__search" data-toggle="modal" data-target="#modal-sidebar-two"></span><span id="submit__search__close" data-dismiss="modal" class="glyphicon glyphicon-remove"></span>
+            </div>
+          </form>
+          <div id="modal-sidebar-two" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <!--not__found-->
+                  <p class="not__found"><span id="text__search"></span>&#8212; Ничего не найдено
+                    <!--success.-->
+                  </p>
+                  <ul class="success">
+                    <li>
+                      <div class="product__search clearfix">
+                        <div class="modal__product"> 
+                          <h5>Акустические системы F&D R223 Beech </h5>
+                          <h6> 
+                            <p class="line-height">Мощность 36 Вт, Частота 25 Гц 20000 Гц, Выход для</p>наушников...
+                          </h6>
+                        </div>
+                        <ul class="list-inline modal__product__price">
+                          <li>650 <sup>000</sup></li>
+                          <li class="product__price-no">708 <sup>000</sup></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="active">
+                      <div class="product__search clearfix">
+                        <div class="modal__product"> 
+                          <h5>Акустические системы Sony 1878</h5>
+                          <h6> 
+                            <p class="line-height">15.6" (1920 x 1080), Intel Core i7 4500U, 8 Гб, 256 Гб </p>(SSD),...
+                          </h6>
+                        </div>
+                        <ul class="list-inline modal__product__price">
+                          <li class="dark-blue">1 230 <sup>000</sup></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="product__search clearfix">
+                        <div class="modal__product"> 
+                          <h5>Акустические системы Sony 1878 </h5>
+                          <h6>Мощность 36 Вт, Частота 25 Гц 20000 Гц</h6>
+                        </div>
+                        <ul class="list-inline modal__product__price">
+                          <li class="text">Под заказ. 10-14 дней</li>
+                        </ul>
+                      </div>
+                    </li><a href="" class="modal__button__search">Все результаты: <span>147</span></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basket_icon"><span id="basket_calculate">2</span>Корзина<b id="basket_button" data-toggle="modal" class="glyphicon glyphicon-chevron-down"></b></div>
+        </div>
+      </div>
+      <!-- modal window-->
+      <div id="modal-sidebar-zero" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5>Ваша корзина пуста</h5>
+              <div class="search"> 
+                <p class="line_height">Выберите товар и нажмите </p>
+                <p>на кнопку «В корзину»</p>
+              </div>
+              <div class="sales">
+                <p class="line_height">%   Акция: Сумка в подарок </p>
+                <p>при покупке ноутбука HP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-sidebar" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!--	button.close(type='button', data-dismiss='modal', aria-hidden='true') ×-->
+            <div class="modal-body row">
+              <div class="col-md-6">
+                <h4>
+                   
+                  Ваш заказ: <span>1 830 000 рублей</span>
+                </h4>
+                <table>						
+                  <tr class="active">
+                    <td class="modal__product"> 
+                      <h5>Акустические системы<br>F&D R223</h5>
+                      <ul class="list-inline modal__product__price">
+                        <li>650 <sup>000</sup></li>
+                        <li class="product__price-no">708 <sup>000</sup></li>
+                      </ul>
+                    </td>
+                    <td> 
+                      <!--spinner-->
+                      <div class="input-group"><span class="input-group-btn">
+                          <button type="button" data-value="decrease" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                        <input id="spinner" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                          <button type="button" data-value="increase" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                            <!--exit spiner-->
+                          </button></span>
+                      </div><a href="">Удалить</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="modal__product"> 
+                      <h5>Акустические системы<br>Sony 1878</h5>
+                      <ul class="list-inline modal__product__price">
+                        <li class="dark-blue">1 230 <sup>000</sup></li>
+                      </ul>
+                    </td>
+                    <td> 
+                      <!--spinner-->
+                      <div class="input-group"><span class="input-group-btn">
+                          <button type="button" data-value="decrease" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                        <input id="spinner2" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                          <button type="button" data-value="increase" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                            <!--exit spinner-->
+                          </button></span>
+                      </div><a href="">Удалить</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="modal__product"> 
+                      <h5>Акустические системы<br>Sony 1878</h5>
+                      <ul class="list-inline modal__product__price">
+                        <li class="text">Предзаказ: доставка <span>через 10-14 дней</span></li>
+                      </ul>
+                    </td>
+                    <td> 
+                      <!--spinner-->
+                      <div class="input-group"><span class="input-group-btn">
+                          <button type="button" data-value="decrease" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                        <input id="spinner3" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                          <button type="button" data-value="increase" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                            <!--exit spinner-->
+                          </button></span>
+                      </div><a href="">Удалить</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="modal__product"> 
+                      <h5>Акустические системы<br>Sony 1878</h5>
+                      <ul class="list-inline modal__product__price">
+                        <li>650 <sup>000</sup></li>
+                        <li class="product__price-no">708 <sup>000</sup></li>
+                      </ul>
+                    </td>
+                    <td> 
+                      <!--spinner-->
+                      <div class="input-group"><span class="input-group-btn">
+                          <button type="button" data-value="decrease" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                        <input id="spinner4" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                          <button type="button" data-value="increase" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                            <!--exit spinner-->
+                          </button></span>
+                      </div><a href="">Удалить</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <div class="modal__shipping">
+                  <h4>Оформить доставку или самовывоз</h4>
+                  <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
+                  <button>Оформить за 2 минуты</button>
+                </div>
+                <div class="modal__ordering">
+                  <h4>Оформить доставку или самовывоз</h4>
+                  <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
+                  <form role="form" class="form-inline">		
+                    <input id="contactsPhone" type="text" name="contactsPhone" data-mask="+375__ ___-__-__" placeholder="+375__ ___-__-__" class="form-control">
+                    <input type="text" placeholder="Имя" class="form-control">
+                    <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--			.modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+          -->
+        </div>
+      </div>
+      <!-- exit modal window-->
+      <div class="row menu__product">
+        <!-- navigation-left-->
+        <!--a(href="" id="touch-menu") Каталог товаров-->
+        <nav role="navigation" class="col-md-3 navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"><a href="#" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><b class="glyphicon glyphicon-align-justify"></b>Каталог товаров</a></div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+              <ul class="navbar__left nav navbar-nav">
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Ноутбуки и аксессуары</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Планшеты и гаджеты</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                  <ul class="list_col dropdown-menu">
+                    <h4>Планшеты и гаджеты</h4>
+                            <li><a href="#">
+                                <p>Планшеты</p></a></li>
+                            <li><a href="#">
+                                <p>Электронные книги</p></a></li>
+                            <li><a href="#">
+                                <p>Мобильные телефоны</p></a></li>
+                            <li><a href="#">
+                                <p>Умные часы</p></a></li>
+                            <li><a href="#">
+                                <p>Умные весы</p></a></li>
+                            <li><a href="#">
+                                <p>GPS навигаторы</p></a></li>
+                            <li><a href="#">
+                                <p>Видеорегистраторы</p></a></li>
+                            <li><a href="#">
+                                <p>Фотоаппараты и видеокамеры</p></a></li>
+                            <li><a href="#">
+                                <p>МР3 плееры</p></a></li>
+                            <li><a href="#">
+                                <p>Диктофоны</p></a></li>
+                            <li><a href="#">
+                                <p>Чехлы для планшетов, электронных книг</p></a></li>
+                            <li><a href="#">
+                                <p>Чехлы для моб. телефонов</p></a></li>
+                            <li><a href="#">
+                                <p>Сумки для фото и видеокамер</p></a></li>
+                            <li><a href="#">
+                                <p>Аксессуары для мобильных устройств</p></a></li>
+                            <li><a href="#">
+                                <p>Аксессуары для цифровых фотоаппаратов и видеокамер</p></a></li>
+                    <div class="dropdown__unnamed">							</div>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Компьютеры и комплектующие</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Мониторы и телевизоры</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Клавиатуры, мыши, игровые манипуляторы</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Колонки и наушники</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Принтеры и сканеры</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Сетевое оборудование</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Видеонаблюдение и офисная телефония</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Хранение информации</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Элементы питания</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            <p>Аксессуары</p><b class="glyphicon glyphicon-chevron-right"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action1</a></li>
+                          </ul>
+                </li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    <p>%   Акции</p></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- exit navigation-left-->
+        <!--carousel-->
+        <div class="col-md-9">
+          <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
+            <!-- Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides-->
+            <div class="carousel-inner">
+              <div class="item active row"><img src="images/slide1.jpg" alt="slide1">
+                <div class="carousel-caption col-md-4">
+                  <h2 class="line-height">Устройство 2 в 1 </h2>
+                  <h2>Prestigio MultiPad Visconte 2</h2>
+                  <h4 class="line-height">Планшет – когда вы этого хотите,</h4>
+                  <h4>Ноутбук – когда вам это </h4>
+                  <ul class="slider__icon list-inline">
+                    <li class="slider__icon__windows"></li>
+                    <li class="slider__icon__intel"></li>
+                    <li class="slider__icon__3g"></li>
+                    <li class="slider__icon__ram"></li>
+                  </ul>
+                  <h2 class="carousel-caption__price">3 799  <sup>000</sup></h2>
+                </div>
+              </div>
+              <div class="item"><img src="images/slide1.jpg" alt="slide2">
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item"><img src="images/slide1.jpg" alt="slide3">
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item"><img src="images/slide1.jpg" alt="slide4">
+                <div class="carousel-caption"></div>
+              </div>
+            </div>
+            <!-- Controls--><a href="#carousel-example-generic" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel-example-generic" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+          <div class="row menu__slider_bottom">
+            <div class="col-md-4 menu__shipping col-sm-6 col-xs-6">
+              <h5>Доставка заказов<br>по всей Беларуси</h5>
+              <p><span>Самовывоз Минск, Брест, </span><br>Гомель, Пружаны.</p>
+            </div>
+            <div class="col-md-4 menu__presence col-sm-6 col-xs-6">
+              <h5>В наличии 5000+<br>товаров</h5>
+              <p><span>Компьютерная техника, </span><br>которую не надо ждать. </p>
+            </div>
+            <div class="col-md-4 menu__certificate">
+              <h5>Подарочные<br>сертификаты</h5>
+              <p><span>200 000, 300 000... и до </span><br>1 000 000 рублей. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__top clearfix">
+          <div class="content__top__day"> 
+            <h2>Лучшие предложения 1 – 30 мая</h2>
+          </div>
+          <ul class="content__top__filter clearfix">
+            <li> <a href="#">Хиты </a></li>
+            <li> <a href="#">Новинки</a></li>
+            <li><a href="#">Скидки</a></li>
+          </ul>
+        </div>
+        <div class="content__top_ms">
+          <div class="content__top_ms__day_ms"> 
+            <h2>Лучшие предложения 1 – 30 мая</h2>
+          </div>
+          <ul class="content__top_ms__filter_ms clearfix">
+            <li> <a href="#"> <strong>Хиты </strong></a></li>
+            <li> <a href="#"> <strong>Новинки</strong></a></li>
+            <li><a href="#"> <strong>Скидки</strong></a></li>
+          </ul>
+        </div>
+        <div class="row content__product">
+          <div class="col-lg-6 col-md-4 col-xs-8">
+            <h4>Apple MacBook Pro 15'' Retina (2014 год)</h4>
+            <h5>
+              Intel Core i7 4870HQ, 16 Гб, 512 Гб (SSD), NVIDIA GeForce GT 750M 
+              2 ГБ, цвет корпуса серебристый, цвет крышки серебристый,...
+            </h5>
+            <ul class="list-inline product__price">
+              <li class="product__price-blue">17 540 <sup>500</sup></li>
+              <li class="product__price-no">19 850 <sup>750</sup></li>
+            </ul>
+            <ul class="product__skils">
+              <li class="product__price-green"> <strong>Начинающих пользователям</strong></li>
+              <li class="product__price-red"><strong>Батарея на 12 часов</strong></li>
+              <li class="product__price-yellow"> <strong>Выбор эстетов</strong></li>
+            </ul>
+            <p class="detailed">Подробнее</p>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-4">
+            <h4>Aкустические системы F&D<br>R223 Beech </h4>
+            <h5>
+              Мощность 36 Вт, Частота 25 
+               Гц 20000 Гц, Выход для наушников...				
+            </h5>
+            <ul class="list-inline product__price">
+              <li class="product__price-blue">650 <sup>000</sup></li>
+              <li class="product__price-no">708 <sup>000</sup></li>
+            </ul>
+            <ul class="product__skils">
+              <li class="product__price-green"><strong>Оптимально для дома</strong></li>
+            </ul>
+            <p class="detailed">Подробнее</p>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-4">
+            <h4>Смартфон Apple iPhone 6 <br>(16Gb)
+              <h5>
+                Apple iOS, экран 4.7" IPS
+                (750x1334), процессор 1400 МГц (2 ядр.), память 16 ГБ,...		
+              </h5>
+              <ul class="list-inline product__price">
+                <li class="product__price-pink">10 157 <sup>000</sup></li>
+              </ul>
+            </h4>
+            <p class="detailed">Подробнее</p>
+          </div>
+          <div class="col-lg-2 col-md-4 col-xs-4">
+            <h4>планшет Samsung Galaxy Tab 4 10.1 16GB 3G Black (SM-T531) </h4>
+            <h5>
+              10.1" 1280x800, Android, Qual-
+               comm APQ8064 1200 МГц, ...		
+            </h5>
+            <ul class="list-inline product__price">
+              <li class="product__price-pink">4 125 <sup>000</sup></li>
+            </ul>
+            <ul class="product__skils">
+              <li class="product__price-green"><strong>Скидка -20% до 30 мая</strong></li>
+            </ul>
+            <p class="detailed">Подробнее</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
