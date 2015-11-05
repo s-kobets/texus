@@ -4,10 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <!--link(rel='stylesheet' href='../assets/css/bootstrap.css')  -->
-    <!--link(rel='stylesheet' href='../assets/css/common.css') -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <!--link(rel='stylesheet' href='css/bootstrap.css')     	-->
+    <!--link(rel='stylesheet' href='css/common.css')-->
   </head>
   <body>
     <div class="wrapper">
@@ -38,13 +38,13 @@
       <!--exit navbar-->
       <!--.menu-search				-->
       <div class="row menu__search">
-        <div class="col-md-3 col-sm-3 col-xs-3"> <a href="#" class="logo">
+        <div class="col-md-3 col-sm-3 col-xs-12"> <a href="#" class="logo">
             <h2>Техника<br>Успеха</h2>
             <div class="logo__hover">
               <h6>На главную</h6>
             </div>
             <p class="logo__texus"></p></a></div>
-        <div class="col-md-9 col-sm-9 col-xs-9">
+        <div class="col-md-9 col-sm-9 col-xs-6">
           <ul class="menu__phone list-inline">
             <li>
               <p><span class="glyphicon glyphicon-earphone"></span>+375 17 <strong>289-50-50</strong></p>
@@ -117,6 +117,20 @@
             </div>
           </div>
           <div class="basket_icon"><span id="basket_calculate">2</span>Корзина<b id="basket_button" data-toggle="modal" class="glyphicon glyphicon-chevron-down"></b></div>
+        </div>
+        <div class="menu__mobile col-xs-12">
+          <div class="row">
+            <div class="col-xs-3"> 
+              <div class="glyphicon glyphicon-align-justify"></div>
+            </div>
+            <div class="col-xs-3"> 
+              <div class="glyphicon glyphicon-earphone"></div>
+            </div>
+            <div class="col-xs-3"> 
+              <div class="glyphicon glyphicon-search"></div>
+            </div>
+            <div class="col-xs-3 mobile__basket"><span id="basket_calculate">2</span></div>
+          </div>
         </div>
       </div>
       <!-- modal window-->
@@ -437,6 +451,9 @@
           <div class="content__top_ms__day_ms"> 
             <h2>Лучшие предложения 1 – 30 мая</h2>
           </div>
+          <div class="content__top_ms__day_ms_mobile">
+            <h2>Спецпредложения</h2>
+          </div>
           <ul class="content__top_ms__filter_ms clearfix">
             <li> <a href="#"> <strong>Хиты </strong></a></li>
             <li> <a href="#"> <strong>Новинки</strong></a></li>
@@ -444,7 +461,7 @@
           </ul>
         </div>
         <div class="row content__product">
-          <div class="col-lg-6 col-md-4 col-xs-8">
+          <div class="col-lg-6 col-md-4 col-xs-12">
             <h4>Apple MacBook Pro 15'' Retina (2014 год)</h4>
             <h5>
               Intel Core i7 4870HQ, 16 Гб, 512 Гб (SSD), NVIDIA GeForce GT 750M 
@@ -461,7 +478,7 @@
             </ul>
             <p class="detailed">Подробнее</p>
           </div>
-          <div class="col-lg-2 col-md-4 col-xs-4">
+          <div class="col-lg-2 col-md-4 col-xs-12">
             <h4>Aкустические системы F&D<br>R223 Beech </h4>
             <h5>
               Мощность 36 Вт, Частота 25 
@@ -476,7 +493,7 @@
             </ul>
             <p class="detailed">Подробнее</p>
           </div>
-          <div class="col-lg-2 col-md-4 col-xs-4">
+          <div class="col-lg-2 col-md-4 col-xs-12">
             <h4>Смартфон Apple iPhone 6 <br>(16Gb)
               <h5>
                 Apple iOS, экран 4.7" IPS
@@ -488,7 +505,7 @@
             </h4>
             <p class="detailed">Подробнее</p>
           </div>
-          <div class="col-lg-2 col-md-4 col-xs-4">
+          <div class="col-lg-2 col-md-4 col-xs-12">
             <h4>планшет Samsung Galaxy Tab 4 10.1 16GB 3G Black (SM-T531) </h4>
             <h5>
               10.1" 1280x800, Android, Qual-
@@ -502,6 +519,30 @@
             </ul>
             <p class="detailed">Подробнее</p>
           </div>
+        </div>
+        <div class="row content__product_xs sliderA clearfix">
+          <input id="slider1_1" type="radio" name="slider1" checked="checked">
+          <label for="slider1_1"></label>
+          <div class="slide">
+            <h4>Смартфон Apple iPhone 6 <br>(16Gb)
+              <h5>
+                Apple iOS, экран 4.7" IPS
+                (750x1334), процессор 1400 МГц (2 ядр.), память 16 ГБ,...		
+              </h5>
+              <ul class="list-inline product__price">
+                <li class="product__price-pink">10 157 <sup>000</sup></li>
+              </ul>
+            </h4>
+          </div>
+          <input id="slider1_2" type="radio" name="slider1">
+          <label for="slider1_2"></label>
+          <div class="slide"></div>
+          <input id="slider1_3" type="radio" name="slider1">
+          <label for="slider1_3"></label>
+          <div class="slide"></div>
+          <input id="slider1_4" type="radio" name="slider1">
+          <label for="slider1_4"></label>
+          <div class="slide"></div>
         </div>
       </div>
     </div>
