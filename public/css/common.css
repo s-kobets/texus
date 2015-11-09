@@ -290,6 +290,11 @@ table {
   border-bottom: 1px solid #e8e8e8;
   background: url("../images/product1.jpg") no-repeat center 20px;
 }
+@media (max-width: 800px) {
+  .content__product .col-lg-6 {
+    width: 66.7%;
+  }
+}
 .content__product .col-lg-6:hover p.detailed {
   display: block;
 }
@@ -297,8 +302,13 @@ table {
   margin-top: -1px;
   margin-left: -1px;
   border-bottom: none;
-  background: url("../images/product7.jpg") no-repeat center center;
+  background: url("../images/product7.jpg") no-repeat center top;
   background-size: 100% auto;
+}
+@media (max-width: 800px) {
+  .content__product .col-lg-6:nth-child(7) {
+    margin-top: 0;
+  }
 }
 .content__product h4 {
   font: 16px/24px 'AFuturica', Arial;
@@ -314,6 +324,12 @@ table {
   top: 165px;
   left: 355px;
 }
+@media (max-width: 800px) {
+  .content__product h5.configuration {
+    top: 38%;
+    left: 64%;
+  }
+}
 .content__product .col-lg-2 {
   display: block;
   position: relative;
@@ -322,6 +338,11 @@ table {
   height: 445px;
   border-right: 1px solid #e8e8e8;
   background: url("../images/product2.jpg") no-repeat center 40px;
+}
+@media (max-width: 800px) {
+  .content__product .col-lg-2 {
+    width: 33.3%;
+  }
 }
 .content__product .col-lg-2:hover p.detailed {
   display: block;
@@ -355,7 +376,7 @@ table {
   padding-top: 35px;
   color: #fff;
   border-right: none;
-  background: url("../images/product8.jpg") no-repeat center center;
+  background: url("../images/product8.jpg") no-repeat center top;
   background-size: 100%;
 }
 .content__product .col-lg-2:nth-child(10) h3 {
@@ -467,6 +488,11 @@ table {
   margin: 0 auto;
   padding-bottom: 82px;
 }
+@media (max-width: 800px) {
+  .bx-wrapper {
+    width: 580px !important;
+  }
+}
 .bx-wrapper img:hover {
   box-shadow: 1px 1px 1px #e8e8e8;
   transform: scale(1.2);
@@ -531,6 +557,12 @@ ul.product__skils li {
   padding-right: 25px;
   font: 12px/24px 'AFuturicaExtraBold', Arial;
   color: #fff;
+}
+@media (max-width: 800px) {
+  ul.product__skils li {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
 }
 ul.product__skils li.product__price-green {
   background: url("../images/product_scils1.png") no-repeat left center;
@@ -668,6 +700,15 @@ ul.product__skils li.product__price-yellow {
   line-height: 20px;
   color: #8b9294;
 }
+@media (max-width: 800px) {
+  .footer__social .col-lg-3.col-xs-12 {
+    padding-top: 15px;
+    padding-bottom: 0;
+    height: 110px;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+  }
+}
 .footer__social .f-social a {
   display: inline-block;
   margin-left: 10px;
@@ -720,6 +761,22 @@ ul.product__skils li.product__price-yellow {
 .footer-bottom ul li:last-child {
   padding-right: 30px;
   background: url("../images/Logo-NS.png") no-repeat right center;
+}
+.footer-bottom ul li a {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .footer-bottom ul li {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .footer-bottom ul li.pull-right {
+    float: none !important;
+    background-position: 74% center;
+  }
 }
 .footer-bottom h6 {
   margin: 0;
@@ -886,6 +943,7 @@ nav.menu__top li.open a:focus {
 .menu__search form {
   display: inline-block;
   width: 77%;
+  margin-left: 0;
 }
 @media (max-width: 1010px) {
   .menu__search form {
@@ -1014,6 +1072,16 @@ nav.menu__top li.open a:focus {
   padding: 20px 0;
   background-color: #f1f1f1;
 }
+.menu__product .navbar {
+  height: 680px;
+  background-color: #01a0e4;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .menu__product .navbar {
+    height: auto;
+  }
+}
 @media (max-width: 479px) {
   .menu__product .col-md-9 {
     display: none;
@@ -1055,6 +1123,17 @@ nav.menu__top li.open a:focus {
 .menu__product .carousel-inner img {
   width: 100%;
   height: auto;
+}
+.menu__product a.left.carousel-control,
+.menu__product a.right.carousel-control {
+  width: 56px;
+  height: 68px;
+  top: 50%;
+  margin-top: -34px;
+  background: url("../images/carousel_left.png") no-repeat;
+}
+.menu__product a.right.carousel-control {
+  background: url("../images/carousel_right.png") no-repeat;
 }
 .menu__product .slider__icon {
   margin-top: 20px;
@@ -1410,7 +1489,7 @@ nav.menu__top li.open a:focus {
   text-transform: uppercase;
   background-color: #01a0e4;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .navbar-header a {
     display: none;
   }
