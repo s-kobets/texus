@@ -3535,9 +3535,16 @@ input[type="button"].btn-block {
 .fade.in {
   opacity: 1;
 }
+
 .collapse {
   display: none;
 }
+@media (min-width 479px) and (max-width 485px){
+  .collapse {
+      display: block !important;
+  }
+}   
+
 .collapse.in {
   display: block;
 }
@@ -3580,7 +3587,7 @@ tbody.collapse.in {
   outline: 0;
 }
 .dropdown-menu {
-  position: absolute;
+  position: absolute !important;
   top: 100%;
   left: 0;
   z-index: 1000;
