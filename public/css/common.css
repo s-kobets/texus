@@ -1667,8 +1667,14 @@ nav.menu__top li.open a:focus {
 #modal-sidebar .modal__ordering button span.glyphicon-chevron-right {
   color: #fff;
 }
+nav {
+  position: static;
+}
 .nav > li {
   position: static;
+}
+.navbar-header {
+  float: none;
 }
 .navbar-header a {
   display: block;
@@ -1679,8 +1685,9 @@ nav.menu__top li.open a:focus {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #01a0e4;
+  z-index: 9999;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .navbar-header a {
     display: none;
   }
@@ -1697,29 +1704,36 @@ nav.menu__top li.open a:focus {
 .navbar__left.nav.navbar-nav {
   margin: 0;
 }
-.navbar__left {
+.collapse.navbar-collapse {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100% !important;
+}
+@media (max-width: 801px) {
+  .collapse.navbar-collapse {
+    position: static;
+  }
+}
+.navbar-collapse.in {
+  overflow: visible;
+}
+.navbar__left {
   width: 240px;
   padding-top: 7px;
   height: 100%;
   background-color: #01a0e4;
 }
+@media (max-width: 801px) {
+  .navbar__left {
+    width: 100%;
+  }
+}
 .navbar__left li.dropdown {
   width: 100%;
-/*
-		&.open:after
-			content ''
-			position absolute
-			top 0
-			right -3px
-			display block
-			height 34px
-			width 6px
-			background-color #fff
-			z-index 1001
-		*/
+}
+.navbar__left li.dropdown.open {
+  background-color: #fff;
 }
 .navbar__left li.dropdown a {
   display: inline-block;
@@ -1754,7 +1768,14 @@ nav.menu__top li.open a:focus {
   padding-bottom: 230px;
   width: 543px;
   height: 100%;
-  box-shadow: 5px 1px 5px rgba(0,0,0,0.3);
+}
+@media (max-width: 801px) {
+  .navbar__left ul.dropdown-menu {
+    position: relative !important;
+    width: auto;
+    left: 0;
+    float: none;
+  }
 }
 .navbar__left ul.dropdown-menu h4 {
   margin-top: 7px;
@@ -1783,6 +1804,6 @@ nav.menu__top li.open a:focus {
   bottom: 0;
   height: 230px;
   width: 543px;
-  background: url("../images/unnamed.png") no-repeat left center;
+  background: url("../images/unnamed.png") no-repeat right center;
   background-size: 100% 100%;
 }
