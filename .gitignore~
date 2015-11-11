@@ -1,5 +1,6 @@
-assets
+assets/fonts
+assets/images
 исходники
-nod_modules
+node_modules
 gulpfile.js
 packege.json

@@ -1,0 +1,67 @@
+include ../helpers/mixin_navbar_left
+.navbar-header
+	a.button__collaps(href='javascript: void(0);' data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+		b.glyphicon.glyphicon-align-justify
+		| Каталог товаров
+nav.col-md-3.navbar.navbar-default(role="navigation")
+	.container-fluid
+		
+		.collapse.navbar-collapse#bs-example-navbar-collapse-1
+			ul.navbar__left.nav.navbar-nav
+				li.dropdown
+					+navbar_left_li('Ноутбуки и аксессуары')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Планшеты и гаджеты')
+					ul.list_col.dropdown-menu
+						h4 Планшеты и гаджеты
+						+dropdown_list_col('Планшеты')
+						+dropdown_list_col('Электронные книги')
+						+dropdown_list_col('Мобильные телефоны')
+						+dropdown_list_col('Умные часы')
+						+dropdown_list_col('Умные весы')
+						+dropdown_list_col('GPS навигаторы')
+						+dropdown_list_col('Видеорегистраторы')
+						+dropdown_list_col('Фотоаппараты и видеокамеры')
+						+dropdown_list_col('МР3 плееры')
+						+dropdown_list_col('Диктофоны')
+						+dropdown_list_col('Чехлы для планшетов, электронных книг')
+						+dropdown_list_col('Чехлы для моб. телефонов')
+						+dropdown_list_col('Сумки для фото и видеокамер')
+						+dropdown_list_col('Аксессуары для мобильных устройств')
+						+dropdown_list_col('Аксессуары для цифровых фотоаппаратов и видеокамер')
+						.dropdown__unnamed							
+				li.dropdown
+					+navbar_left_li('Компьютеры и комплектующие')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Мониторы и телевизоры')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Клавиатуры, мыши, игровые манипуляторы')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Колонки и наушники')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Принтеры и сканеры')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Сетевое оборудование')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Видеонаблюдение и офисная телефония')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Хранение информации')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Элементы питания')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					+navbar_left_li('Аксессуары')
+					+navbar_left_dropdown('Action1')
+				li.dropdown
+					a.dropdown-toggle(href='#', data-toggle='dropdown')
+						p %   Акции
+			

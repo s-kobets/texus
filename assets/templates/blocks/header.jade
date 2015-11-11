@@ -1,0 +1,197 @@
+//navbar
+include navbar
+//exit navbar
+//.menu-search				
+.row.menu__search
+	.col-md-3.col-sm-3.col-xs-3 
+		a.logo(href='#') 
+			p Техника
+				br
+				| Успеха
+			p.hover  На главную
+		a.logo__hover
+
+
+	.col-md-9.col-sm-9.col-xs-9
+		ul.menu__phone.list-inline
+			li
+				p
+					span.glyphicon.glyphicon-earphone
+					|+375 17 
+					strong 289-50-50
+			li
+				p.icon-velcome
+					|+375 29 
+					strong 389-50-50 
+			li
+				p.icon-mts
+					|+375 33 
+					strong 389-50-50
+			li 
+				p.p_smal 9:00 – 21:00
+		form.navbar-form.click(role='search')
+			.form-group
+				input.form-control#search(type='text', placeholder='Что ищите?')
+				span#submit__search(data-toggle='modal' data-target='#modal-sidebar-two')
+				span#submit__search__close.glyphicon.glyphicon-remove(data-dismiss='modal')
+		#modal-sidebar-two.modal.fade
+			.modal-dialog
+				.modal-content
+					.modal-body
+						//not__found
+						p.not__found
+							span#text__search
+							&#8212; Ничего не найдено
+							//success.
+						ul.success
+							li
+								.product__search.clearfix
+									.modal__product 
+										h5 Акустические системы F&D R223 Beech 
+										h6 
+											p.line-height Мощность 36 Вт, Частота 25 Гц 20000 Гц, Выход для
+											| наушников...
+									ul.list-inline.modal__product__price
+										li
+											| 650 
+											sup 000
+										li.product__price-no
+											| 708 
+											sup 000
+							li.active
+								.product__search.clearfix
+									.modal__product 
+										h5 Акустические системы Sony 1878
+										h6 
+											p.line-height 15.6" (1920 x 1080), Intel Core i7 4500U, 8 Гб, 256 Гб 
+											| (SSD),...
+									ul.list-inline.modal__product__price
+										li.dark-blue
+											| 1 230 
+											sup 000
+
+							li
+								.product__search.clearfix
+									.modal__product 
+										h5 Акустические системы Sony 1878 
+										h6 Мощность 36 Вт, Частота 25 Гц 20000 Гц
+									ul.list-inline.modal__product__price
+										li.text Под заказ. 10-14 дней
+							
+							a(href='').modal__button__search
+								| Все результаты: 
+								span 147
+					
+		.basket_icon
+			span#basket_calculate 2
+			| Корзина
+			b.glyphicon.glyphicon-chevron-down#basket_button(data-toggle='modal')
+		
+	.menu__mobile.col-xs-12
+		.row
+			.col-xs-3 
+				.glyphicon.glyphicon-align-justify
+			.col-xs-3 
+				.glyphicon.glyphicon-earphone
+			.col-xs-3 
+				.glyphicon.glyphicon-search
+			.col-xs-3.mobile__basket
+				span#basket_calculate 2
+
+	.menu__table.col-xs-12
+		.row
+			.col-xs-2 
+				a(href='' data-target="#bs-example-navbar-collapse-2").glyphicon.glyphicon-align-justify
+			.col-xs-4
+				a.logo(href='#') 
+					p Техника
+						br
+						| Успеха
+					p.hover  На главную
+				a.logo__hover				
+			.col-xs-2 
+				.glyphicon.glyphicon-earphone
+			.col-xs-2 
+				.glyphicon.glyphicon-search
+			.col-xs-2.mobile__basket
+				span#basket_calculate 2
+
+
+	// modal window
+	include modal_window
+	// exit modal window
+
+.row.menu__product
+	// navigation-left
+	include navbar_left
+	// exit navigation-left
+	
+	//carousel
+	.col-md-9
+		#carousel-example-generic.carousel.slide(data-ride='carousel')
+			// Indicators
+			ol.carousel-indicators
+				li.active(data-target='#carousel-example-generic', data-slide-to='0')
+				li(data-target='#carousel-example-generic', data-slide-to='1')
+				li(data-target='#carousel-example-generic', data-slide-to='2')
+				li(data-target='#carousel-example-generic', data-slide-to='3')
+			// Wrapper for slides
+			.carousel-inner
+				.item.active.row
+					img(src='images/slide1.jpg', alt='slide1')
+
+					.carousel-caption.col-md-4
+						h2.line-height Устройство 2 в 1 
+						h2 Prestigio MultiPad Visconte 2
+						h4.line-height Планшет – когда вы этого хотите,
+						h4 Ноутбук – когда вам это 
+						ul.slider__icon.list-inline
+							li.slider__icon__windows
+							li.slider__icon__intel
+							li.slider__icon__3g
+							li.slider__icon__ram
+						h2.carousel-caption__price 3 799  
+							sup 000
+
+				.item
+					img(src='images/slide1.jpg', alt='slide2')
+					.carousel-caption
+				.item
+					img(src='images/slide1.jpg', alt='slide3')
+					.carousel-caption
+				.item
+					img(src='images/slide1.jpg', alt='slide4')
+					.carousel-caption
+			// Controls
+			a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+			//
+				span.glyphicon.glyphicon-chevron-left
+			a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+			//
+				span.glyphicon.glyphicon-chevron-right
+		
+		.row.menu__slider_bottom
+			.col-md-4.menu__shipping.col-sm-6.col-xs-6
+				h5 Доставка заказов
+					br
+					| по всей Беларуси
+				p
+					span Самовывоз Минск, Брест, 
+					br
+					| Гомель, Пружаны.
+			.col-md-4.menu__presence.col-sm-6.col-xs-6
+				h5 В наличии 5000+
+					br
+					| товаров
+				p
+					span Компьютерная техника, 
+					br
+					| которую не надо ждать. 
+			.col-md-4.menu__certificate
+				h5 Подарочные
+					br
+					| сертификаты
+				p
+					span 200 000, 300 000... и до 
+					br
+					| 1 000 000 рублей. 

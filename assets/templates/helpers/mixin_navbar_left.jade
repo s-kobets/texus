@@ -1,0 +1,20 @@
+mixin navbar_left_li(name)
+
+	a.dropdown-toggle(href='javascript: void(0);', data-toggle='dropdown')
+		p=name
+		b.glyphicon.glyphicon-chevron-right
+
+mixin navbar_left_dropdown(name)
+
+	ul.dropdown-menu(role = 'menu')
+		li
+			a(href='javascript: void(0);')=name
+
+mixin dropdown_list_col(name)
+	li
+		a(href='javascript: void(0);')
+			p=name
+
+mixin slider(num)
+	li
+		img(src'=num' alt="picture")

@@ -1,0 +1,163 @@
+.footer
+	margin -350px auto 0
+	width 1240px
+	height 350px
+
+	@media (max-width 1239px)
+		width 100%
+
+	@media (max-width 482px)
+		margin-top 0
+		height 100%
+
+.footer__social
+	padding 0 20px
+	background-color #f0f0f0
+
+	@media (max-width 482px)		
+		padding 0
+	
+	.col-lg-3
+		height 225px
+		padding-top 32px
+		padding-bottom 35px
+		padding-left 20px
+		background-color #fff
+		border-right 1px solid #f0f0f0
+		
+		@media (max-width 482px)
+			border-top 1px solid #f0f0f0
+
+		&:last-child
+			border-right none
+
+			@media (max-width 800px) and (min-width 483px)
+				h5
+					float left
+					
+				.f-social 
+					float left
+
+					a:first-child
+						margin-left 15px
+				padding-left 30%	
+				padding-top 40px
+				padding-bottom 40px
+				height 110px
+				border-top 1px solid #f0f0f0
+				text-align center
+			
+			@media (max-width 482px) and (min-width 322px)
+				width 50%
+
+			@media (max-width 320px)
+				width 100%
+				height 100%
+		
+		h5
+			margin-bottom 7px
+			font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			font-weight bold
+			color #2b2a28
+
+		ul
+			li
+				font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				color #2b2a28
+
+				&.small
+					font-size 12px
+					line-height 20px
+					color #8b9294
+		
+		
+			
+		&.col-xs-4
+			@media (max-width 482px) and (min-width 322px)
+				width 50%
+
+			@media (max-width 320px)
+				width 100%
+				height 100%
+	
+	.f-social a
+		display: inline-block;
+		margin-left: 10px;
+		width: 32px;
+		height: 32px;
+		text-decoration none
+		border-radius: 50%;
+		background: url('../images/f-social.png');
+		
+		@media (max-width 482px) and (min-width 322px)
+			margin-left: 25px;
+		
+		@media (max-width 322px)
+			margin-left: 50px
+		&:first-child
+			margin-left: 0
+
+	.f-social 
+		& .s-vk
+			background-position: 0 0;
+
+		& .s-fb
+			background-position: 96px 0;
+
+		& .s-tw
+			background-position: 64px 0;
+
+		& .s-yt
+			background-position: 32px 0;
+
+.footer-bottom
+	padding 32px 40px
+	background-color #f0f0f0
+	
+	ul.license
+		position relative
+
+		li
+			font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #2b2a28
+			
+			&:first-child
+				display inline-block
+			&:nth-child(2)
+				display inline-block
+				margin-left 20px
+				font-size 12px
+				color #01a0e4
+			&:last-child	
+				h6
+					display inline-block
+					color #8b9294
+			a
+				text-decoration none
+		
+
+
+	.col-md-4
+		text-align right
+
+		h6
+			display inline-block
+			margin 0
+			padding-right 30px
+			font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #484848
+			background url('../images/Logo-NS.png') no-repeat right center
+
+
+@media (max-width 1023px)
+	.footer-bottom
+		padding 32px 0 32px
+		.col-md-8,
+		.col-md-4			
+			width 100%
+			text-align center
+		ul.license
+			li:first-child,
+			li:nth-child(2)
+				margin 0
+				display block

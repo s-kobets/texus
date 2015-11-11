@@ -1,4 +1,5 @@
-assets
+assets/fonts
+assets/images
 исходники
 node_modules
 gulpfile.js

@@ -1,0 +1,209 @@
+#modal-sidebar-zero.modal
+	top 0
+	left 78%
+	//padding 0 20px
+	width 240px
+	
+	@media (max-width 1023px)
+		top 160px
+		left 65%
+
+	.modal-dialog
+		width 100%
+
+		.modal-content	
+			border none
+			padding 22px 0 15px 0
+	.modal-body
+		h5	
+			padding-left 20px
+			padding-bottom 10px		
+			font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			font-weight bold
+			color #2b2a28
+		.search	
+			padding-left 20px	
+			padding-bottom 18px
+			font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #72787a
+
+			p.line_height
+				line_height 30px
+		.sales
+			padding-left 20px				 
+			padding-top 17px
+			font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			border-top 1px solid #e8e8e8
+			color #01a0e4
+
+			p.line_height
+				line_height 30px
+
+#modal-sidebar
+	margin 0 auto
+	padding 0 20px
+	width 1000px
+	
+	@media (max-width 999px)
+		top 160px
+		width 100%
+		margin 0	
+
+	.modal-dialog
+		.modal-content	
+			border none
+	.modal-body
+		h4
+			padding 22px 0 20px 40px
+			font 20px/30px 'AFuturicaExtraBold', sans serif
+			color #2b2a28
+
+			& span
+				margin-left 20px
+				color #01a0e4
+	table
+		display inline-block
+		width 100%
+		height 350px
+		overflow-y scroll
+
+		tr	
+			width 100%		
+			&.active
+				background-color #f0f0f0
+
+				.btn-default
+					border-color #c6c6c6
+			&:nth-child(2)
+				td.modal__product
+					background url('../images/modal_price2.jpg') no-repeat 15% center
+
+			&:nth-child(3)
+				td.modal__product
+					background url('../images/modal_price3.jpg') no-repeat 15% center
+
+			&:nth-child(4)
+				td.modal__product
+					background url('../images/modal_price.jpg') no-repeat 15% center
+
+		td
+			padding-bottom 15px
+			width 33.4%
+			text-align center
+
+			&.modal__product
+				width 66.6%
+				padding-left 30%
+				text-align left
+				background url('../images/modal_price.jpg') no-repeat 15% center
+				
+				& h5
+					font 16px/30px 'AFuturica', sans serif
+					color #2b2a28
+
+			&:last-child
+				padding-top 7px
+				vertical-align top
+				text-align center
+
+				#spinner,
+				#spinner2,
+				#spinner3,
+				#spinner4
+					text-align center
+					font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+					color #2b2a28
+
+				span.glyphicon
+					top -2px
+					font-size 8px
+					color #72787a
+
+				a
+					text-decoration none
+					font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+					color #01a0e4
+
+		ul.modal__product__price		
+			li:first-child					
+				font 16px/30px 'AFuturicaExtraBold', sans serif
+				color #01a0e4
+		
+			li.product__price-no
+				margin-left 10px
+				font 16px/30px 'AFuturica', sans serif
+				color #2b2a28
+				background url('../images/product_price-no.png') no-repeat left center
+				background-size auto
+
+			li.dark-blue
+				color #232f3e
+
+			li.text
+				font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				color #777
+
+				span 
+					line_height 20px
+
+	.modal__shipping
+		padding-left 40px
+		padding-bottom 40px
+		background-color #01a0e4
+
+		h4
+			padding-left 0
+			color #fff
+
+		p 
+			margin-top -3px
+			margin-bottom 27px
+			font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #fff
+
+		button
+			padding-left 20px
+			width 210px
+			height  40px
+			text-align left
+			font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #373635
+			background-color #bae756
+			border none
+			border-radius 5px
+			box-shadow 1px 1px 5px rgba(0,0,0,.3)
+
+	.modal__ordering
+		padding 0 40px 40px
+
+		h4
+			padding-left 0
+
+		p 
+			margin-top -3px
+			margin-bottom 27px
+			font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #777
+		
+		input
+			width 35%
+			border-color #515e6e
+			box-shadow inset 2px 2px 5px rgba(0,0,0,.3)
+			font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #777
+			
+			@media(max-width 767px)
+				display inline-block
+
+				
+			&:nth-child(2)
+				margin 0 10px
+				
+		button
+			font-size 18px
+			border none
+			background-color #01a0e4
+			box-shadow 1px 1px 5px rgba(0,0,0,.3)
+
+			span.glyphicon-chevron-right
+				color #fff

@@ -1,0 +1,96 @@
+#modal-sidebar-zero.modal.fade
+	.modal-dialog
+		.modal-content
+			.modal-body
+				h5 Ваша корзина пуста
+				.search 
+					p.line_height Выберите товар и нажмите 
+					p на кнопку «В корзину»
+				.sales
+					p.line_height %   Акция: Сумка в подарок 
+					p при покупке ноутбука HP
+
+#modal-sidebar.modal.fade
+	.modal-dialog
+		.modal-content
+		
+			//	button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+			.modal-body.row
+				.col-md-6.col-xs-6
+					h4 
+						|Ваш заказ: 
+						span 1 830 000 рублей
+					table						
+						tr.active
+							td.modal__product
+								h5 Акустические системы
+									br
+									| F&D R223
+								ul.list-inline.modal__product__price
+									li
+										| 650 
+										sup 000
+									li.product__price-no
+										| 708 
+										sup 000
+							td 
+								include spinner
+								a(href='') Удалить
+						tr
+							td.modal__product 
+								h5 Акустические системы
+									br
+									| Sony 1878
+								ul.list-inline.modal__product__price
+									li.dark-blue
+										| 1 230 
+										sup 000
+							td 
+								include spinner2
+								a(href='') Удалить
+						tr
+							td.modal__product 
+								h5 Акустические системы
+									br
+									| Sony 1878
+								ul.list-inline.modal__product__price
+									li.text Предзаказ: доставка 
+										span через 10-14 дней
+							td 
+								include spinner3
+								a(href='') Удалить
+						tr
+							td.modal__product 
+								h5 Акустические системы
+									br
+									| Sony 1878
+								ul.list-inline.modal__product__price
+									li
+										| 650 
+										sup 000
+									li.product__price-no
+										| 708 
+										sup 000
+							td 
+								include spinner4
+								a(href='') Удалить
+				.col-md-6.col-xs-6
+					.modal__shipping
+						h4 Оформить доставку или самовывоз
+						p В любое время суток вы можете оформить заказ 
+							br
+							|самостоятельно. Это быстрый и удобный способ.
+						button Оформить за 2 минуты
+					.modal__ordering
+						h4 Оформить доставку или самовывоз
+						p В любое время суток вы можете оформить заказ 
+							br
+							|самостоятельно. Это быстрый и удобный способ.
+						form.form-inline(role="form")		
+							input#contactsPhone(type="text", name="contactsPhone", class="form-control", data-mask="+375__ ___-__-__", placeholder="+375__ ___-__-__")
+							input.form-control(type='text', placeholder='Имя')
+							button.btn.btn-default(type='submit') 
+								span.glyphicon.glyphicon-chevron-right
+		//			.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+				button.btn.btn-primary(type='button') Save changes

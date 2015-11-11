@@ -1,0 +1,83 @@
+.modal-body
+	ul.success	
+		width 100%
+		text-align center
+		padding-top 10px
+		padding-bottom 40px
+
+		li
+			text-align left
+
+			& .product__search 
+				width 640px
+				margin 0 auto
+			&.active
+				background-color #f0f0f0
+
+				.btn-default
+					border-color #c6c6c6
+			&:nth-child(2)
+				.modal__product
+					background url('../images/modal_price2.jpg') no-repeat left center
+
+			&:nth-child(3)
+				padding-bottom 30px
+				.modal__product
+					background url('../images/modal_price3.jpg') no-repeat left center
+
+
+
+			& .modal__product
+				display inline-block
+				float left
+				width 495px
+				padding-left 95px
+				padding-bottom 10px
+				background url('../images/modal_price.jpg') no-repeat left center
+				
+				& h5
+					font 16px/30px 'AFuturica', sans serif
+					color #2b2a28
+				& h6
+					font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+					color #72787a
+
+					& p.line_height
+						line_height 30px
+			
+		a.modal__button__search
+			padding 12px 37px
+			text-align center				
+			text-decoration none
+			font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			font-weight bold
+			color #fff
+			border-radius 4px
+			background-color #01a0e4
+			box-shadow 1px 1px 5px rgba(0,0,0,.3)
+
+		ul.modal__product__price
+			float left
+			margin 35px 0
+
+			li:first-child					
+				font 16px/30px 'AFuturicaExtraBold', sans serif
+				color #01a0e4
+		
+			li.product__price-no
+				margin-left 10px
+				font 16px/30px 'AFuturica', sans serif
+				color #2b2a28
+				background url('../images/product_price-no.png') no-repeat left center
+				background-size auto
+
+			li.dark-blue
+				color #232f3e
+
+			li.text
+				font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				color #777
+
+				span 
+					line_height 20px
+

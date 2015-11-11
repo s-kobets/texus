@@ -1,0 +1,524 @@
+.content__top
+	padding 30px 0
+	background url('../images/content_top.jpg') no-repeat
+	background-size 100% 100%
+
+	&__day
+		display inline-block
+		float left
+		margin-top 6px
+		padding-left 20px
+		padding-right 35px
+		background url('../images/content_top_day.png') no-repeat
+
+		& h2
+			font 28px/48px 'AFuturica', Arial
+	&__filter
+		display inline-block
+		float right
+		padding-left 35px
+		padding-right 20px
+		background url('../images/content_top_filter.png') no-repeat left center
+		
+
+		& li
+			float left 
+			margin-left 20px
+
+			&:first-child
+				margin-left 0
+
+			& a
+				font 28px/60px 'AFuturica', Arial
+				text-decoration none
+				color #01a0e4
+.content__top_ms
+	display none
+	padding 0 20px 29px 20px 
+	background-color #fff
+		
+	&__day_ms		
+		padding-left 20px
+		
+		&_mobile
+			display none
+
+			h2
+				font 28px/48px 'AFuturica', Arial
+				color #2b2a28			
+
+			@media (max-width 479px)						
+				display block	
+		& h2
+			font 28px/80px 'AFuturica', Arial
+			color #2b2a28
+
+		@media (max-width 479px)		
+			display none
+
+	&__filter_ms
+		li
+			float left
+			margin-left 3%
+			width 29% 
+			text-align center
+
+			@media (max-width 478px)		
+				float none
+				margin-left 0
+				padding 5px 0
+				width 100%
+
+			&:last-child
+				margin-right 3%
+
+			& a
+				display block
+				margin-left 20px
+				width 100%
+				font 18px/48px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				text-decoration none
+				color #fff
+				background-color #01a0e4
+				border-radius 4px
+				box-shadow 1px 1px 5px rgba(0,0,0,.3)
+				
+				@media (max-width 482px) and (min-width 322px)		
+					margin-left 10px
+
+				@media (max-width 321px)
+					margin-left 0
+					
+@media (max-width 852px) and (min-width 322px)
+	.content__top
+		display none
+	.content__top_ms
+		padding-left 0
+		display block
+
+@media (max-width 321px)
+	.content__top
+		display none
+	.content__top_ms
+		padding 25px 20px
+		display block
+
+
+.content__product
+	background-color #fff
+
+	@media (max-width 482px)		
+		display none
+
+	& .col-lg-6
+		display block
+		position relative
+		padding 225px 30px 0 20px
+		width 40%
+		height 445px
+		border-right 1px solid #e8e8e8
+		border-bottom 1px solid #e8e8e8
+		background url('../images/product1.jpg') no-repeat center 20px
+		
+		@media (max-width 800px)		
+			width 66.7%
+
+		@media (max-width 482px)		
+			width 100%
+		&:hover
+			box-shadow 0 1px 5px rgba(0,0,0,.3)
+			p.detailed
+				display block
+
+		&:nth-child(7)
+			margin-top -1px
+			margin-left -1px
+			border-bottom none
+			background url('../images/product7.jpg') no-repeat center top
+			background-size 100% auto
+			
+			@media (max-width 800px)
+				margin-top 0
+	& h4
+		font 16px/24px 'AFuturica', Arial
+		color #2b2a28
+
+	& h5
+		position relative
+		margin-top 5px
+		height 60px
+		font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+		color #72787a
+		overflow hidden
+		
+		&:after
+			content ''
+			display block
+			position absolute
+			left 0
+			bottom 0
+			height 20px
+			width 100%
+			background linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,1))
+		
+		&.configuration
+			position absolute
+			top 38%
+			left 64%
+			
+			@media (max-width 1025px) and (min-width 990px)
+				top 30%
+
+	& .col-lg-2
+		display block
+		position relative		
+		padding 220px 30px 0 20px
+		width 20%
+		height 445px
+		border-right 1px solid #e8e8e8
+		background url('../images/product2.jpg') no-repeat center 40px
+		
+		@media (max-width 800px)		
+			width 33.3%
+
+		@media (max-width 482px)		
+			width 100%
+		&:hover
+			box-shadow 0 1px 5px rgba(0,0,0,.3)
+			p.detailed
+				display block
+
+		&:nth-child(3)
+			background url('../images/product3.jpg') no-repeat center 40px
+		
+		&:nth-child(4)
+			border-right none
+			background url('../images/product4.jpg') no-repeat center 40px
+		
+		&:nth-child(5)
+			background url('../images/product5.jpg') no-repeat center 40px
+		
+		&:nth-child(6)
+			border-right none
+			background url('../images/product6.jpg') no-repeat center 40px	
+
+		&:nth-child(8)
+			border-top 1px solid #e8e8e8
+			border-right none
+			background url('../images/product2.jpg') no-repeat center 40px	
+
+		&:nth-child(9)
+			border-top 1px solid #e8e8e8
+			border-bottom 1px solid #e8e8e8
+			border-right none
+			background url('../images/product4.jpg') no-repeat center 40px	
+		
+		&:nth-child(10)
+			padding-top 35px
+			color #fff
+			border-right none
+			background url('../images/product8.jpg') no-repeat center top	
+			background-size 100%
+
+			h3
+				margin-top 0
+				font 20px/30px 'AFuturicaExtraBold'
+			h4
+				margin-top 5px
+				font 16px/24px 'AFuturica'
+				color #fff
+
+		&:nth-child(11)
+			border-bottom 1px solid #e8e8e8
+			background url('../images/product9.jpg') no-repeat center 40px	
+
+		&:nth-child(12)
+			border-right 1px solid #e8e8e8
+			border-bottom 1px solid #e8e8e8
+			background url('../images/product10.jpg') no-repeat center 40px	
+		
+		&:nth-child(13)
+			border-top 1px solid #e8e8e8
+			border-bottom 1px solid #e8e8e8
+			background url('../images/product5.jpg') no-repeat center 40px	
+
+	p.detailed
+		display none
+		position absolute
+		bottom 0
+		left 0
+		padding 11px 0
+		width 100%
+		font 14px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+		color #777777
+		text-align center
+		border-top 1px solid #e8e8e8
+		background-color #fff
+
+	.col-lg-12
+		border-top 1px solid #e8e8e8
+		text-align center
+
+		@media (max-width 482px)
+			margin-bottom 20px
+			
+		a.content__view
+			text-decoration none
+			display block
+			//padding-right 50px
+			font 20px/77px 'AFuturica', Arial
+			color #01a0e4
+			background-color #fff
+			span
+				margin-top 10px
+				margin-left 15px
+
+	
+.content__footer
+	padding-top 35px
+	padding-bottom 350px
+
+	@media (max-width 482px)		
+		display none
+	
+	&__text
+		h2
+			font 28px/48px 'AFuturica' Arial
+			color #2b2a28
+		h4
+			font 20px/60px 'AFuturica' Arial
+			color #01a0e4
+	.bxslider
+		position relative
+		
+		&__description
+			position absolute
+			left 0
+			top 0
+			padding-left 20px
+			padding-right 27px
+			background url('../images/bxslider_description.png') no-repeat
+			background-size 100% 100%
+
+			h6
+				margin 0
+				font 12px/24px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				font-weight bold
+				color #fff	
+		&__text
+			position absolute
+			left 0
+			bottom 0
+			padding-left 20px
+			padding-top 13px
+			height 98px
+
+			&.blue
+				background-color #01a0e4
+			
+			&.grey
+				background-color #232f3e
+
+			&.green
+				background-color #95c22b
+
+			h5
+				font 16px/24px 'AFuturica' Arial
+				color #fff	
+
+	a.glyphicon		
+		font-size 18px
+		text-decoration none
+		color #2b2a28
+.bx-wrapper
+	margin 0 auto
+	padding-bottom 82px
+	
+	@media (max-width 800px)		
+		width 580px !important
+
+
+.bx-wrapper	img:hover
+	box-shadow 1px 1px 1px #e8e8e8
+	transform scale(1.2)
+	transition all 0.2s ease-in
+.bx-wrapper .bx-pager
+	bottom 50px
+.bx-wrapper .bx-controls-direction a
+	top 40%
+.bx-wrapper .bx-next
+	right -30px
+.bx-wrapper .bx-prev
+	left -30px
+
+
+
+ul.product__price
+	position absolute
+	top 360px
+	left 20px
+	
+	
+	& li.product__price-blue,
+	& li.product__price-pink
+		//width 50%	
+		padding 0 14px
+		font 20px/30px 'AFuturicaExtraBold', Arial
+		color #fff
+		background url('../images/product_price.png') no-repeat
+		background-size 100% 100%
+
+	& li.product__price-no
+		margin-left 10px
+		padding 0 5px
+		font 20px/38px 'AFuturica', Arial
+		color #2b2a28
+		background url('../images/product_price-no.png') no-repeat left center
+		background-size auto
+	
+	& li.product__price-pink
+		background url('../images/product_price2.png') no-repeat
+		background-size 100% 100%
+	
+	&.music 
+		top 220px
+		left 0
+
+		li.product__price-blue
+			padding 0 14px
+			font 36px/45px 'AFuturicaExtraBold', Arial
+			sup
+				font-size 77%
+ul.product__skils
+	position absolute
+	top -1px
+	left -1px
+
+	& li
+		position relative				
+		padding-left 20px
+		padding-right 25px
+		font 12px/24px 'AFuturicaExtraBold', Arial
+		color #fff
+
+		@media (max-width 800px)		
+			padding-left 10px
+			padding-right 15px
+
+		&.product__price-green 					
+			background url('../images/product_scils1.png') no-repeat left center
+			background-size 100% 100%
+
+		&.product__price-red
+			margin-top 1px
+			background url('../images/product_scils2.png') no-repeat left center
+			background-size contain
+
+		&.product__price-yellow 
+			margin-top 1px					
+			background url('../images/product_scils3.png') no-repeat left center
+			background-size contain
+	
+
+
+.sliderA
+	display none
+	position relative
+	width 100%
+	height 500px
+	border 1px solid #e8e8e8	
+	text-align center
+	background-color #fff
+
+	@media (max-width 482px)		
+		display block
+
+	& > input 
+		display none
+
+		&:checked + label
+			background: rgba(1, 160, 228, 0.8);
+			
+			& + .slide
+				visibility: visible;
+				opacity: 1;
+				transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+				
+				& + label
+					display: block;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					z-index: 50;
+
+		& + label
+			position relative
+			display inline-block
+			margin-top 450px
+			margin-right 4px
+			width 10px
+			height 10px
+			border-radius 8px
+			background rgba(90, 90, 90, 0.4);
+			cursor pointer
+			z-index 100
+			transition background 0.8s ease-out 0s;
+
+			&:hover
+				background: rgba(250, 250, 250, 0.8);
+	 		
+ 		
+	& > .slide
+		position: absolute;
+		padding-top 210px
+		padding-left 20px
+		padding-right 30px
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: 1;
+		visibility: hidden;
+		opacity: 0;
+		text-align left
+		background url('../images/product2.jpg') no-repeat center 40px
+		transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+		
+		& + label
+			display: none
+		& h4
+			font 16px/24px 'AFuturica', Arial
+			color #2b2a28
+
+		& h5
+			margin-top 5px
+			font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+			color #72787a
+		
+		& ul.product__skils
+			left -20
+			text-align left
+			
+		ul.product__price 
+			margin-top 25px
+			li
+				padding 0 5px
+
+	.col-lg-12
+		text-align center
+
+		@media (max-width 482px)
+			margin-bottom 20px
+			
+		a.content__view_ms
+			text-decoration none
+			display block
+			//padding-right 50px
+			font 20px/77px 'AFuturica', Arial
+			color #01a0e4
+			background-color #fff
+			span
+				margin-top 10px
+				margin-left 15px

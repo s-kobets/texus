@@ -17,26 +17,28 @@
     <div class="wrapper">
       <!--navbar-->
       <nav role="navigation" class="navbar menu__top">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Доставка и самовывоз </a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Оплата<b class="caret glyphicon glyphicon-chevron-down"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Оплата заказа</a></li>
-                <li><a href="#">Рассрочка 0% переплата</a></li>
-                <li><a href="#">Кредит</a></li>
-                <li><a href="#">Для юридических лиц</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Гарантия и сервис</a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">О компании<b class="caret glyphicon glyphicon-chevron-down"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="container-fluid">
+          <div id="bs-example-navbar-collapse-2" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="javascript: void(0);">Доставка и самовывоз </a></li>
+              <li class="dropdown"><a href="javascript: void(0);" data-toggle="dropdown" class="dropdown-toggle">Оплата<b class="caret glyphicon glyphicon-chevron-down"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript: void(0);">Оплата заказа</a></li>
+                  <li><a href="javascript: void(0);">Рассрочка 0% переплата</a></li>
+                  <li><a href="javascript: void(0);">Кредит</a></li>
+                  <li><a href="javascript: void(0);">Для юридических лиц</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript: void(0);">Контакты</a></li>
+              <li><a href="javascript: void(0);">Гарантия и сервис</a></li>
+              <li class="dropdown"><a href="javascript: void(0);" data-toggle="dropdown" class="dropdown-toggle">О компании<b class="caret glyphicon glyphicon-chevron-down"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript: void(0);">Action</a></li>
+                  <li><a href="javascript: void(0);">Another action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <!--exit navbar-->
@@ -135,9 +137,7 @@
         </div>
         <div class="menu__table col-xs-12">
           <div class="row">
-            <div class="col-xs-2"> 
-              <div class="glyphicon glyphicon-align-justify"></div>
-            </div>
+            <div class="col-xs-2"> <a href="" data-target="#bs-example-navbar-collapse-2" class="glyphicon glyphicon-align-justify"></a></div>
             <div class="col-xs-4"><a href="#" class="logo"> 
                 <p>Техника<br>Успеха</p>
                 <p class="hover"> На главную</p></a><a class="logo__hover">				</a></div>
@@ -150,137 +150,137 @@
             <div class="col-xs-2 mobile__basket"><span id="basket_calculate">2</span></div>
           </div>
         </div>
-      </div>
-      <!-- modal window-->
-      <div id="modal-sidebar-zero" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <h5>Ваша корзина пуста</h5>
-              <div class="search"> 
-                <p class="line_height">Выберите товар и нажмите </p>
-                <p>на кнопку «В корзину»</p>
-              </div>
-              <div class="sales">
-                <p class="line_height">%   Акция: Сумка в подарок </p>
-                <p>при покупке ноутбука HP</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="modal-sidebar" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!--	button.close(type='button', data-dismiss='modal', aria-hidden='true') ×-->
-            <div class="modal-body row">
-              <div class="col-md-6">
-                <h4>
-                   
-                  Ваш заказ: <span>1 830 000 рублей</span>
-                </h4>
-                <table>						
-                  <tr class="active">
-                    <td class="modal__product"> 
-                      <h5>Акустические системы<br>F&D R223</h5>
-                      <ul class="list-inline modal__product__price">
-                        <li>650 <sup>000</sup></li>
-                        <li class="product__price-no">708 <sup>000</sup></li>
-                      </ul>
-                    </td>
-                    <td> 
-                      <!--spinner-->
-                      <div class="input-group"><span class="input-group-btn">
-                          <button type="button" data-value="decrease" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
-                        <input id="spinner" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
-                          <button type="button" data-value="increase" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
-                            <!--exit spiner-->
-                          </button></span>
-                      </div><a href="">Удалить</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="modal__product"> 
-                      <h5>Акустические системы<br>Sony 1878</h5>
-                      <ul class="list-inline modal__product__price">
-                        <li class="dark-blue">1 230 <sup>000</sup></li>
-                      </ul>
-                    </td>
-                    <td> 
-                      <!--spinner-->
-                      <div class="input-group"><span class="input-group-btn">
-                          <button type="button" data-value="decrease" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
-                        <input id="spinner2" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
-                          <button type="button" data-value="increase" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
-                            <!--exit spinner-->
-                          </button></span>
-                      </div><a href="">Удалить</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="modal__product"> 
-                      <h5>Акустические системы<br>Sony 1878</h5>
-                      <ul class="list-inline modal__product__price">
-                        <li class="text">Предзаказ: доставка <span>через 10-14 дней</span></li>
-                      </ul>
-                    </td>
-                    <td> 
-                      <!--spinner-->
-                      <div class="input-group"><span class="input-group-btn">
-                          <button type="button" data-value="decrease" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
-                        <input id="spinner3" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
-                          <button type="button" data-value="increase" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
-                            <!--exit spinner-->
-                          </button></span>
-                      </div><a href="">Удалить</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="modal__product"> 
-                      <h5>Акустические системы<br>Sony 1878</h5>
-                      <ul class="list-inline modal__product__price">
-                        <li>650 <sup>000</sup></li>
-                        <li class="product__price-no">708 <sup>000</sup></li>
-                      </ul>
-                    </td>
-                    <td> 
-                      <!--spinner-->
-                      <div class="input-group"><span class="input-group-btn">
-                          <button type="button" data-value="decrease" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
-                        <input id="spinner4" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
-                          <button type="button" data-value="increase" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
-                            <!--exit spinner-->
-                          </button></span>
-                      </div><a href="">Удалить</a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="col-md-6">
-                <div class="modal__shipping">
-                  <h4>Оформить доставку или самовывоз</h4>
-                  <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
-                  <button>Оформить за 2 минуты</button>
+        <!-- modal window-->
+        <div id="modal-sidebar-zero" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h5>Ваша корзина пуста</h5>
+                <div class="search"> 
+                  <p class="line_height">Выберите товар и нажмите </p>
+                  <p>на кнопку «В корзину»</p>
                 </div>
-                <div class="modal__ordering">
-                  <h4>Оформить доставку или самовывоз</h4>
-                  <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
-                  <form role="form" class="form-inline">		
-                    <input id="contactsPhone" type="text" name="contactsPhone" data-mask="+375__ ___-__-__" placeholder="+375__ ___-__-__" class="form-control">
-                    <input type="text" placeholder="Имя" class="form-control">
-                    <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-chevron-right"></span></button>
-                  </form>
+                <div class="sales">
+                  <p class="line_height">%   Акция: Сумка в подарок </p>
+                  <p>при покупке ноутбука HP</p>
                 </div>
               </div>
             </div>
           </div>
-          <!--			.modal-footer
-          button.btn.btn-default(type='button', data-dismiss='modal') Close
-          button.btn.btn-primary(type='button') Save changes
-          -->
         </div>
+        <div id="modal-sidebar" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!--	button.close(type='button', data-dismiss='modal', aria-hidden='true') ×-->
+              <div class="modal-body row">
+                <div class="col-md-6 col-xs-6">
+                  <h4>
+                     
+                    Ваш заказ: <span>1 830 000 рублей</span>
+                  </h4>
+                  <table>						
+                    <tr class="active">
+                      <td class="modal__product">
+                        <h5>Акустические системы<br>F&D R223</h5>
+                        <ul class="list-inline modal__product__price">
+                          <li>650 <sup>000</sup></li>
+                          <li class="product__price-no">708 <sup>000</sup></li>
+                        </ul>
+                      </td>
+                      <td> 
+                        <!--spinner-->
+                        <div class="input-group"><span class="input-group-btn">
+                            <button type="button" data-value="decrease" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                          <input id="spinner" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                            <button type="button" data-value="increase" data-target="#spinner" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                              <!--exit spiner-->
+                            </button></span>
+                        </div><a href="">Удалить</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="modal__product"> 
+                        <h5>Акустические системы<br>Sony 1878</h5>
+                        <ul class="list-inline modal__product__price">
+                          <li class="dark-blue">1 230 <sup>000</sup></li>
+                        </ul>
+                      </td>
+                      <td> 
+                        <!--spinner-->
+                        <div class="input-group"><span class="input-group-btn">
+                            <button type="button" data-value="decrease" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                          <input id="spinner2" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                            <button type="button" data-value="increase" data-target="#spinner2" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                              <!--exit spinner-->
+                            </button></span>
+                        </div><a href="">Удалить</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="modal__product"> 
+                        <h5>Акустические системы<br>Sony 1878</h5>
+                        <ul class="list-inline modal__product__price">
+                          <li class="text">Предзаказ: доставка <span>через 10-14 дней</span></li>
+                        </ul>
+                      </td>
+                      <td> 
+                        <!--spinner-->
+                        <div class="input-group"><span class="input-group-btn">
+                            <button type="button" data-value="decrease" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                          <input id="spinner3" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                            <button type="button" data-value="increase" data-target="#spinner3" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                              <!--exit spinner-->
+                            </button></span>
+                        </div><a href="">Удалить</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="modal__product"> 
+                        <h5>Акустические системы<br>Sony 1878</h5>
+                        <ul class="list-inline modal__product__price">
+                          <li>650 <sup>000</sup></li>
+                          <li class="product__price-no">708 <sup>000</sup></li>
+                        </ul>
+                      </td>
+                      <td> 
+                        <!--spinner-->
+                        <div class="input-group"><span class="input-group-btn">
+                            <button type="button" data-value="decrease" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button></span>
+                          <input id="spinner4" type="text" data-ride="spinner" value="1" class="form-control input-number"><span class="input-group-btn">
+                            <button type="button" data-value="increase" data-target="#spinner4" data-toggle="spinner" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span>
+                              <!--exit spinner-->
+                            </button></span>
+                        </div><a href="">Удалить</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                  <div class="modal__shipping">
+                    <h4>Оформить доставку или самовывоз</h4>
+                    <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
+                    <button>Оформить за 2 минуты</button>
+                  </div>
+                  <div class="modal__ordering">
+                    <h4>Оформить доставку или самовывоз</h4>
+                    <p>В любое время суток вы можете оформить заказ <br>самостоятельно. Это быстрый и удобный способ.</p>
+                    <form role="form" class="form-inline">		
+                      <input id="contactsPhone" type="text" name="contactsPhone" data-mask="+375__ ___-__-__" placeholder="+375__ ___-__-__" class="form-control">
+                      <input type="text" placeholder="Имя" class="form-control">
+                      <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--			.modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+            button.btn.btn-primary(type='button') Save changes
+            -->
+          </div>
+        </div>
+        <!-- exit modal window-->
       </div>
-      <!-- exit modal window-->
       <div class="row menu__product">
         <!-- navigation-left-->
         <div class="navbar-header"><a href="javascript: void(0);" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="button__collaps"><b class="glyphicon glyphicon-align-justify"></b>Каталог товаров</a></div>

@@ -1,0 +1,132 @@
+
+//dropdown не позицианируется у li
+nav
+	position static
+.nav > li
+	position static
+.navbar-header
+	float none
+	a
+		
+		display block
+		padding 15px 0
+		font 20px/30px 'AFuturicaExtraBold'
+		color #fff
+		text-align center
+		text-decoration none
+		text-transform uppercase
+		background-color #01a0e4
+		z-index 9999
+
+		@media (min-width 801px)
+			display none
+
+		@media (max-width 601px)		
+			display none
+
+		b
+			margin-right 18px
+			font-size 16px
+
+.navbar__left.nav.navbar-nav
+	margin 0
+
+/*чтобы растягивался блок по высоте*/	
+.collapse.navbar-collapse
+	position absolute
+	top 0
+	left 0
+	height 100% !important
+	
+	@media (max-width 801px)
+		position static
+@media (min-width 810px) and (max-width 799px)
+	#bs-example-navbar-collapse-1
+		display none
+
+.navbar-collapse.in
+	overflow visible
+			
+.navbar__left	
+	width 240px
+	padding-top 7px
+	height 100%
+	background-color #01a0e4
+	
+	@media (max-width 801px)
+		width 100%
+
+	
+	& li.dropdown
+		width 100%
+
+		&.open
+			background-color #fff
+
+		& a
+			display inline-block
+			width 100%
+			padding 0 30px
+			text-decoration none
+			color #fff
+
+			&:focus,
+			&:hover
+				background-color #fff
+				color #2b2a28
+				b
+					color #fff			
+			p
+				margin 8px 0
+				font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				
+		& b
+			position absolute
+			top 13px
+			right 20px
+			font-size 8px
+			color rgba(255,255,255,.3)
+
+	ul.dropdown-menu
+		top 0
+		left 100%	
+		padding-bottom 230px		
+		width 543px
+		height 100%
+		box-shadow 5px 1px 5px rgba(0,0,0,.3)
+			/*чтобы толкало меню при открытии*/
+		@media (max-width 801px)
+			position relative !important
+			width auto
+			left 0	
+			float none
+		h4
+			margin-top 7px
+			padding-left 40px
+			font 20px/60px 'AFuturica'
+			color #01a0e4
+
+		li
+			a
+				padding-left 20px				
+				padding-right 0
+				text-decoration none
+				font 14px/34px  Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				color #2b2a28
+
+				&:hover
+					color #01a0e4
+					background-color #f0f0f0		
+
+				p
+					margin 5px 0
+					line-height 20px
+
+		.dropdown__unnamed
+			position absolute
+			left 0
+			bottom 0
+			height 230px
+			width 543px
+			background url('../images/unnamed.png') no-repeat right center 
+			background-size 100% 100%
