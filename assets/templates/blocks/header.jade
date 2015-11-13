@@ -1,39 +1,80 @@
-//navbar
-include navbar
-//exit navbar
-//.menu-search				
-.row.menu__search
-	.col-md-3.col-sm-3.col-xs-3 
-		a.logo(href='#') 
-			p Техника
-				br
-				| Успеха
-			p.hover  На главную
-		a.logo__hover
+.header
+	//navbar
+	include navbar
+	//exit navbar
+	//.menu-search				
+	.row.menu__search
+		.col-md-3.col-sm-3.col-xs-3 
+			a.logo(href='#') 
+				p Техника
+					br
+					| Успеха
+				p.hover  На главную
+			a.logo__hover
 
 
-	.col-md-9.col-sm-9.col-xs-9
-		ul.menu__phone.list-inline
-			li
-				p
-					span.glyphicon.glyphicon-earphone
-					|+375 17 
-					strong 289-50-50
-			li
-				p.icon-velcome
-					|+375 29 
-					strong 389-50-50 
-			li
-				p.icon-mts
-					|+375 33 
-					strong 389-50-50
-			li 
-				p.p_smal 9:00 – 21:00
-		form.navbar-form.click(role='search')
-			.form-group
-				input.form-control#search(type='text', placeholder='Что ищите?')
-				span#submit__search(data-toggle='modal' data-target='#modal-sidebar-two')
-				span#submit__search__close.glyphicon.glyphicon-remove(data-dismiss='modal')
+		.col-md-9.col-sm-9.col-xs-9
+			ul.menu__phone.list-inline
+				li
+					p
+						span.glyphicon.glyphicon-earphone
+						|+375 17 
+						strong 289-50-50
+				li
+					p.icon-velcome
+						|+375 29 
+						strong 389-50-50 
+				li
+					p.icon-mts
+						|+375 33 
+						strong 389-50-50
+				li 
+					p.p_smal 9:00 – 21:00
+			form.navbar-form.click(role='search')
+				.form-group#js-form-group
+					input.form-control#search(type='text', placeholder='Что ищите?')
+					span#submit__search(data-toggle='modal' data-target='#modal-sidebar-two')
+					span#submit__search__close.glyphicon.glyphicon-remove(data-dismiss='modal')
+			
+						
+			.basket_icon
+				a.area-link.js-basket_button(data-toggle='modal', href='#')
+				span.js-basket_calculate 0
+				| Корзина
+				b#js-button.glyphicon.glyphicon-chevron-down
+		//окно для меню верхнего
+		#modal-navbar.modal.fade
+			.modal-dialog
+				.modal-content
+					.modal-body
+						include navbar
+
+
+
+		//окно для телефонов
+		#modal-sidebar-telephon.modal.fade
+			.modal-dialog
+				.modal-content
+					.modal-body
+						ul
+							li
+								p
+									span.glyphicon.glyphicon-earphone
+									|+375 17 
+									strong 289-50-50
+							li
+								p.icon-velcome
+									|+375 29 
+									strong 389-50-50 
+							li
+								p.icon-mts
+									|+375 33 
+									strong 389-50-50
+							li 
+								p.p_smal 9:00 – 21:00
+							li
+								a(href='javascript: void(0);') Адреса магазинов и точек самовывоза 
+		//окно для поиска товара
 		#modal-sidebar-two.modal.fade
 			.modal-dialog
 				.modal-content
@@ -43,7 +84,14 @@ include navbar
 							span#text__search
 							&#8212; Ничего не найдено
 							//success.
-						ul.success
+						ul.success.col-xs-12
+
+							li.from_ms
+								form.navbar-form.click(role='search')
+									.form-group#js-form-group
+										input.form-control#search(type='text', placeholder='Что ищите?')
+										span#submit__search(data-toggle='modal' data-target='#modal-sidebar-two')
+										span#submit__search__close.glyphicon.glyphicon-remove(data-dismiss='modal')
 							li
 								.product__search.clearfix
 									.modal__product 
@@ -81,45 +129,22 @@ include navbar
 							a(href='').modal__button__search
 								| Все результаты: 
 								span 147
-					
-		.basket_icon
-			span#basket_calculate 2
-			| Корзина
-			b.glyphicon.glyphicon-chevron-down#basket_button(data-toggle='modal')
-		
-	.menu__mobile.col-xs-12
-		.row
-			.col-xs-3 
-				.glyphicon.glyphicon-align-justify
-			.col-xs-3 
-				.glyphicon.glyphicon-earphone
-			.col-xs-3 
-				.glyphicon.glyphicon-search
-			.col-xs-3.mobile__basket
-				span#basket_calculate 2
+		.menu__mobile.col-xs-12
+			.row
+				.col-xs-3 
+					.glyphicon.glyphicon-align-justify
+				.col-xs-3 
+					.glyphicon.glyphicon-earphone
+				.col-xs-3 
+					.glyphicon.glyphicon-search
+				.col-xs-3.mobile__basket
+					span.js-basket_calculate 2
+		//разрешение 480px
+		include menu__table
 
-	.menu__table.col-xs-12
-		.row
-			.col-xs-2 
-				a(href='' data-target="#bs-example-navbar-collapse-2").glyphicon.glyphicon-align-justify
-			.col-xs-4
-				a.logo(href='#') 
-					p Техника
-						br
-						| Успеха
-					p.hover  На главную
-				a.logo__hover				
-			.col-xs-2 
-				.glyphicon.glyphicon-earphone
-			.col-xs-2 
-				.glyphicon.glyphicon-search
-			.col-xs-2.mobile__basket
-				span#basket_calculate 2
-
-
-	// modal window
-	include modal_window
-	// exit modal window
+		// modal window
+		include modal_window
+		// exit modal window
 
 .row.menu__product
 	// navigation-left
@@ -140,7 +165,7 @@ include navbar
 				.item.active.row
 					img(src='images/slide1.jpg', alt='slide1')
 
-					.carousel-caption.col-md-4
+					.carousel-caption
 						h2.line-height Устройство 2 в 1 
 						h2 Prestigio MultiPad Visconte 2
 						h4.line-height Планшет – когда вы этого хотите,

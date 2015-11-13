@@ -37,13 +37,14 @@ nav
 	top 0
 	left 0
 	height 100% !important
-	
+
 	@media (max-width 801px)
 		position static
+/*
 @media (min-width 810px) and (max-width 799px)
 	#bs-example-navbar-collapse-1
 		display none
-
+*/
 .navbar-collapse.in
 	overflow visible
 			
@@ -52,6 +53,9 @@ nav
 	padding-top 7px
 	height 100%
 	background-color #01a0e4
+	
+	@media (min-width 992px) and (max-width 1025px)
+		width 24%
 	
 	@media (max-width 801px)
 		width 100%
@@ -94,6 +98,10 @@ nav
 		width 543px
 		height 100%
 		box-shadow 5px 1px 5px rgba(0,0,0,.3)
+		
+		@media (max-width 1025px) and (min-width 850px)
+			left 24%
+
 			/*чтобы толкало меню при открытии*/
 		@media (max-width 801px)
 			position relative !important
@@ -130,3 +138,6 @@ nav
 			width 543px
 			background url('../images/unnamed.png') no-repeat right center 
 			background-size 100% 100%
+			
+			@media (max-width 482px)
+				width 100%

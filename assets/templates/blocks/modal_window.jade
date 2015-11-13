@@ -16,10 +16,14 @@
 		
 			//	button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
 			.modal-body.row
+
 				.col-md-6.col-xs-6
 					h4 
 						|Ваш заказ: 
 						span 1 830 000 рублей
+
+					include mobile_content_header
+
 					table						
 						tr.active
 							td.modal__product
@@ -86,7 +90,7 @@
 						p В любое время суток вы можете оформить заказ 
 							br
 							|самостоятельно. Это быстрый и удобный способ.
-						form.form-inline(role="form")		
+						form.form__call.form-inline(role="form")		
 							input#contactsPhone(type="text", name="contactsPhone", class="form-control", data-mask="+375__ ___-__-__", placeholder="+375__ ___-__-__")
 							input.form-control(type='text', placeholder='Имя')
 							button.btn.btn-default(type='submit') 

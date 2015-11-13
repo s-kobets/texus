@@ -32,6 +32,9 @@
 				font 28px/60px 'AFuturica', Arial
 				text-decoration none
 				color #01a0e4
+				
+				&.current
+					color #2b2a28
 .content__top_ms
 	display none
 	padding 0 20px 29px 20px 
@@ -150,6 +153,9 @@
 		font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
 		color #72787a
 		overflow hidden
+		
+		@media (max-width 1025px) and (min-width 850px)
+			height 40px		
 		
 		&:after
 			content ''
@@ -323,7 +329,7 @@
 				background-color #95c22b
 
 			h5
-				font 16px/24px 'AFuturica' Arial
+				font 16px/24px 'AFuturica' Arial, Verdana, Geneva CY, sans-serif
 				color #fff	
 
 	a.glyphicon		
@@ -334,9 +340,11 @@
 	margin 0 auto
 	padding-bottom 82px
 	
+	/*ширина слайдера*/
+	@media (max-width 1025px) and (min-width 810px)
+		width 870px !important
 	@media (max-width 800px)		
 		width 580px !important
-
 
 .bx-wrapper	img:hover
 	box-shadow 1px 1px 1px #e8e8e8
@@ -350,7 +358,9 @@
 	right -30px
 .bx-wrapper .bx-prev
 	left -30px
-
+.bxslider
+	li
+		overflow hidden	
 
 
 ul.product__price
@@ -363,7 +373,7 @@ ul.product__price
 	& li.product__price-pink
 		//width 50%	
 		padding 0 14px
-		font 20px/30px 'AFuturicaExtraBold', Arial
+		font 20px/30px 'AFuturicaExtraBold', Arial, Verdana, Geneva CY, sans-serif
 		color #fff
 		background url('../images/product_price.png') no-repeat
 		background-size 100% 100%
@@ -371,7 +381,7 @@ ul.product__price
 	& li.product__price-no
 		margin-left 10px
 		padding 0 5px
-		font 20px/38px 'AFuturica', Arial
+		font 20px/38px 'AFuturica', Arial, Verdana, Geneva CY, sans-serif
 		color #2b2a28
 		background url('../images/product_price-no.png') no-repeat left center
 		background-size auto
@@ -386,7 +396,7 @@ ul.product__price
 
 		li.product__price-blue
 			padding 0 14px
-			font 36px/45px 'AFuturicaExtraBold', Arial
+			font 36px/45px 'AFuturicaExtraBold', Arial, Verdana, Geneva CY, sans-serif
 			sup
 				font-size 77%
 ul.product__skils
@@ -396,14 +406,13 @@ ul.product__skils
 
 	& li
 		position relative				
-		padding-left 20px
-		padding-right 25px
-		font 12px/24px 'AFuturicaExtraBold', Arial
+		padding 6px 25px 6px 20px
+		font 12px/12px 'AFuturicaExtraBold', Arial, Verdana, Geneva CY, sans-serif
 		color #fff
 
-		@media (max-width 800px)		
-			padding-left 10px
-			padding-right 15px
+		@media (max-width 1025px)		
+			padding-left 7px
+			padding-right 7px
 
 		&.product__price-green 					
 			background url('../images/product_scils1.png') no-repeat left center

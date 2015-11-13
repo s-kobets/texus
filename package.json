@@ -18,7 +18,8 @@
     "gulp-uglify": "^1.2.0",
     "gulp-webserver": "^0.9.1",
     "nib": "^1.1.0",
-    "gulp": "~3.9.0"
+    "gulp": "~3.9.0",
+    "gulp-connect": "~2.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,3 +1,20 @@
+body
+	font-family Arial, Verdana, Geneva CY, sans-serif
+	transition all 0.3s linear
+	background-color #f0f0f0
+
+.modal.fade.in
+	z-index 200
+.modal-backdrop
+	z-index 199	
+
+a.area-link
+	position absolute
+	top 0
+	left 0
+	bottom 0
+	height 100%
+	width 100%	
  .wrapper 
 	margin 0 auto
 	width 1240px
@@ -54,9 +71,9 @@
 					background-color #01a0e4
 					color #fff
 
-				&:focus,
-				&:hover
-					background-color #4ebdec
+					&:focus,
+					&:hover
+						background-color #4ebdec
 
 nav.menu__top li.open a:focus
 	color #fff
@@ -65,9 +82,9 @@ nav.menu__top li.open a:focus
 @media (min-width 760px)
 	.nav > li
 		float left
-@media (max-width 759px)
+/*@media (max-width 759px)
 	.menu__top
-		display none
+		display none*/
 
 	
 
@@ -104,12 +121,12 @@ nav.menu__top li.open a:focus
 		//padding-top 142px
 		//margin-top 15px
 		height 85px
-		margin-top 15px
-		font 32px/32px Arial
+		margin-top 25px
+		font 26px/26px 'AFuturica' Arial
 		font-weight bold
 		text-decoration none
 		text-transform uppercase
-		letter-spacing .01em
+		letter-spacing .1em
 		text-align center
 		color #fff
 		background url('../images/logo_texus.png') no-repeat center 62px
@@ -170,16 +187,23 @@ nav.menu__top li.open a:focus
 
 	& form
 		display inline-block
-		width 77%
+		width 74%
 		margin-left 0
 		
-		@media (max-width 759px)
+		@media (max-width 1010px)
 			width 60%
+			
+		@media (max-width 482px)
+			margin 0 auto
+		/*модальное окно телефона*/
+		&.form__call
+			width 100%
 
 		& .form-group
 			margin-right 56px
 			width 100%
 			position relative
+			z-index 202
 
 			& input 
 				width 100%
@@ -218,29 +242,34 @@ nav.menu__top li.open a:focus
 		display inline-block
 		position relative
 		height 35px
-		margin-left 42px
-		padding-left 42px
-		background url('../images/basket.png') no-repeat left bottom
+		margin-left 40px
+		padding-left 55px
+		background url('../images/basket.png') no-repeat 0 0
 		font 20px/24px 'AFuturica'
 		color #c3f15d
 		font-weight bolt				
-
+		
 		span
 			position absolute
-			top -5px
-			left 12px
+			top -7px
+			left 17px
 			font-family 'AFuturicaExtraBold'
 			line_height 30px
+			vertical-align middle
 
 		b.glyphicon
-			top -2px
+			top 0
 			margin-left 7px
 			font-size 8px
-			line_height 24px
+			line-height 24px
+
+			&.glyphicon-remove
+				font-size 18px
+				top 5px
 
 		@media (max-width 479px)		
 			display none
-	
+	/*
 	.menu__mobile
 		position absolute
 		bottom 0
@@ -260,7 +289,7 @@ nav.menu__top li.open a:focus
 			position relative		
 			height 85px
 			background url('../images/basket.png') no-repeat center 40px
-		
+			
 		span
 			position absolute
 			top 28px
@@ -270,60 +299,21 @@ nav.menu__top li.open a:focus
 		
 		@media (max-width 478px)		
 			display block
+		*/
+	
 
-	.menu__table
-		display none
-		font-size 25px
-		line_height 36px
-		text-align center
-		color #fff
+/*навигация под ipad*/
+@media (min-width 992px) and (max-width 1025px)
+	.menu__product .col-md-3
+		width 24%
 		
-		.col-xs-2 
-			padding-top 45px
-			padding-bottom 20px
-			font-size 35px
-
-		.mobile__basket	
-			position relative		
-			height 85px
-			background url('../images/basket.png') no-repeat center 50px
-		
-		span
-			position absolute
-			top 37px
-			left 35px
-			font 20px/28px 'AFuturicaExtraBold'
-			color #c3f15d
-		@media (min-width 479px) and (max-width 601px)		
-			display block
-#modal-sidebar-two
-	/*окно поиска*/
-	.modal-dialog
-		position absolute
-		top 0
-		left 0
-		padding 0 20px
-		width 100%
-		
-		.modal-body
-			background-color #fff
-			
-			p.not__found
-				margin 50px 50px 40px 240px
-				font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
-				color #72787a
-				
-				span#text__search
-					margin 0 5px
-					line_height 24px
-					color #2b2a28
-				
+	.menu__product .col-md-9
+		width 76%				
 .menu__product
 	position relative
 	margin 20px 0
-	//height 645px
 	background-color #f1f1f1
-	//overflow hidden
+	
 
 	.navbar
 		//height 680px
@@ -346,8 +336,12 @@ nav.menu__top li.open a:focus
 		position absolute
 		top 47px
 		left 80px
+		width 320px
 		text-align left
 		text-shadow none
+		
+		@media (max-width 1025px)
+			top 15px
 
 		h2
 			font 28px/40px 'AFuturicaExtraBold'
@@ -407,14 +401,18 @@ nav.menu__top li.open a:focus
 			background url('../images/3g.png') no-repeat
 		&__ram
 			background url('../images/ram.png') no-repeat
-
+	
+	
 	& .menu__slider_bottom
 		& .menu__shipping,
 		& .menu__presence,
 		& .menu__certificate
-			padding 25px 87px 25px 20px
+			padding 25px 107px 25px 20px
 			background #fff url('../images/menu_shipping.png') no-repeat 210px center 
-
+			
+			@media (max-width 1025px) and (min-width 850px)
+				background-position 140px center
+			
 			& h5
 				margin-bottom 10px
 				font 14px/20px Tahoma, Arial, Verdana, Geneva CY, sans-serif
@@ -428,15 +426,26 @@ nav.menu__top li.open a:focus
 			&:hover
 				box-shadow 1px 1px 5px rgba(0,0,0,.3)
 				background-position 180px center
+				
+				@media (max-width 1025px) and (min-width 850px)
+					background-position 120px center
+				
 		& .menu__presence
 			border-left 1px solid #f1f1f1
 			background #fff url('../images/menu_presence.png') no-repeat 200px center
-
+			
+			@media (max-width 1025px) and (min-width 850px)
+				background-position 140px center
+			
 		& .menu__certificate
 			border-left 1px solid #f1f1f1
 			padding-right 115px
 			background #fff url('../images/menu_sertificate.jpg') no-repeat 200px center
-
+			
+			@media (max-width 1025px) and (min-width 850px)
+				background-position 140px center
+			
+		
 		@media (max-width 1010px)
 			.menu__certificate
 				display none

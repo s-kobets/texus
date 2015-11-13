@@ -1,9 +1,23 @@
+
+.modal-dialog
+	margin 0
+
 .modal-body
 	ul.success	
 		width 100%
 		text-align center
 		padding-top 10px
 		padding-bottom 40px
+		background-color #fff
+		
+		@media (max-width 482px)
+			padding-top 0
+		
+		form.navbar-form
+			display none
+			
+			@media (max-width 482px)
+				display block
 
 		li
 			text-align left
@@ -11,30 +25,50 @@
 			& .product__search 
 				width 640px
 				margin 0 auto
+				
+				@media (max-width 482px)
+					width 100%
 			&.active
 				background-color #f0f0f0
 
 				.btn-default
 					border-color #c6c6c6
+			&.from_ms
+				padding 20px 0
+				background-color #f0f0f0
+				
+				@media (min-width 483px)
+					display none
+
 			&:nth-child(2)
 				.modal__product
 					background url('../images/modal_price2.jpg') no-repeat left center
+					
+					@media (max-width 482px)
+						background-position 20px 20px
 
 			&:nth-child(3)
 				padding-bottom 30px
 				.modal__product
 					background url('../images/modal_price3.jpg') no-repeat left center
 
-
+					@media (max-width 482px)
+						background-position 20px 20px
+			&:nth-child(4)			
+				@media (max-width 482px)
+					padding-bottom 40px
 
 			& .modal__product
 				display inline-block
 				float left
 				width 495px
-				padding-left 95px
-				padding-bottom 10px
+				padding 10px 30px 10px 110px
 				background url('../images/modal_price.jpg') no-repeat left center
 				
+				@media (max-width 482px)
+					padding-bottom 0
+					background-position 20px 10px
+					
 				& h5
 					font 16px/30px 'AFuturica', sans serif
 					color #2b2a28
@@ -59,6 +93,10 @@
 		ul.modal__product__price
 			float left
 			margin 35px 0
+			
+			@media (max-width 482px)
+				margin 0 0 0 110px
+
 
 			li:first-child					
 				font 16px/30px 'AFuturicaExtraBold', sans serif
@@ -81,3 +119,31 @@
 				span 
 					line_height 20px
 
+#modal-sidebar-two
+	/*окно поиска*/
+	.modal-dialog
+		position absolute
+		top 170px
+		left 0
+		padding 0 20px
+		width 100%
+		
+		@media(max-width 482px)
+			top 119px
+			padding 0
+		
+		.modal-body
+			background-color #fff
+			text-align center
+			
+			p.not__found
+				margin 50px
+				font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
+				color #72787a
+				
+				@media (max-width 482px)
+					display none
+				span#text__search
+					margin 0 5px
+					line_height 24px
+					color #2b2a28

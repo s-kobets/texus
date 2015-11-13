@@ -1,0 +1,26 @@
+.menu__table
+	ul.row
+		li.col-xs-2.table__button
+			a.area-link.area-link-menu.navbar-toggle(href='javascript: void(0);', data-toggle='collapse' data-target='#bs-example-navbar-collapse-2')
+				.glyphicon.glyphicon-align-justify
+
+		li.col-xs-4
+			a.logo(href='#')
+				p Техника
+					br
+					| Успеха
+				p.hover  На главную
+			a.logo__hover
+
+		li.col-xs-2.dropdown.table__button
+			a.area-link(href='javascript: void(0);',data-toggle='modal' data-target='#modal-sidebar-telephon')
+				.glyphicon.glyphicon-earphone
+
+		li.col-xs-2.dropdown.table__button
+			a.area-link.js-search_button(href='javascript: void(0);',data-toggle='modal' data-target='#modal-sidebar-two')
+				.glyphicon.glyphicon-search
+		
+
+		li.col-xs-2.mobile__basket.dropdown.table__button
+			a.area-link.js-basket_button(data-toggle='modal', href='javascript: void(0);')
+			span.js-basket_calculate 0

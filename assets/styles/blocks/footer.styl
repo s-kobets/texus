@@ -16,7 +16,7 @@
 
 	@media (max-width 482px)		
 		padding 0
-	
+
 	.col-lg-3
 		height 225px
 		padding-top 32px
@@ -24,6 +24,9 @@
 		padding-left 20px
 		background-color #fff
 		border-right 1px solid #f0f0f0
+		
+		@media (max-width 1025px) and (min-width 850px)
+			width 25%
 		
 		@media (max-width 482px)
 			border-top 1px solid #f0f0f0
@@ -132,6 +135,7 @@
 				h6
 					display inline-block
 					color #8b9294
+					
 			a
 				text-decoration none
 		
@@ -147,6 +151,13 @@
 			font 14px/30px Tahoma, Arial, Verdana, Geneva CY, sans-serif
 			color #484848
 			background url('../images/Logo-NS.png') no-repeat right center
+
+			a
+				text-decoration none
+				color #484848
+				
+				&:hover
+					text-decoration none							
 
 
 @media (max-width 1023px)
